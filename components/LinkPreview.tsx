@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function LinkPreview({ link }: { link: LinkProps }) {
     const homeUrl = "https://mp-5-self-seven.vercel.app/";
 
-    const aliasPath=`/${link.alias}`;
+    const aliasPath=`${link.alias}`;
     const Url=`${homeUrl}${aliasPath}`;
 
     async function Copy() {
