@@ -14,7 +14,7 @@ export default function NewLinkForm({
     const [url, setUrl] = useState("");
     const [error, setError] = useState("");
     //since the homeurl is diff base on deployment
-    const homeUrl="http://localhost:3000";
+    const homeUrl="https://mp-5-self-seven.vercel.app/";
     return (
         <form className="bg-amber-50 rounded-2xl shadow-lg p-6 flex flex-col gap-6 w-[70%]"
             onSubmit={(async (event) => {
