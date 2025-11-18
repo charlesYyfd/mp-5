@@ -22,18 +22,11 @@ export default function NewLinkForm({
                 setError("");
 
                 try {
-
                     const newLink = await createNewLink(alias, url);
                     append(newLink);
                 } catch (err: any) {
-                    // err.message is the exact string from createNewLink
                     console.error("Server returned an error:", err.message);
-
-                    // you can show *exactly* that:
                     setError(err.message);
-
-                    // or you can add your own flavor:
-                    // setError("Oops! " + err.message);
                 }
                 /*createNewLink(alias, url)
                     .then((newLink)=>append(newLink))
