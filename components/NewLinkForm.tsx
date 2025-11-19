@@ -46,7 +46,7 @@ export default function NewLinkForm({
             />
             <FormHelperText>What Website is on your mind? ;)</FormHelperText>
             <div className="flex justify-end">
-                <span className="text-gray-600 ">{homeUrl}</span>
+                <span className="text-gray-600 w-[60%]">{homeUrl}</span>
                 <TextField
                     sx={{ backgroundColor: "white", width: "100%"}}
                     variant="outlined"
